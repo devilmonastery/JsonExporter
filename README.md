@@ -1,2 +1,4 @@
-# m5mon
-Prometheus exporter for the Netgear Nighthawk M5
+# JsonExporter
+Prometheus exporter for JSON data
+
+

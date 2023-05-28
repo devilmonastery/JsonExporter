@@ -1,0 +1,588 @@
+{
+  "custom": {
+    "lastWifiChan": 13,
+    "hiddenMenuEnabled": false,
+    "hideAdminPassword": false,
+    "carrierSim": "Unknown",
+    "end": 0
+  },
+  "webd": {
+    "adminPassword": "****************",
+    "hideAdminPassword": true,
+    "hintNumber": 0,
+    "end": ""
+  },
+  "lcd": {
+    "backlightActive": false,
+    "end": ""
+  },
+  "led": {
+    "end": ""
+  },
+  "sim": {
+    "pin": {
+      "mode": "Disabled",
+      "retry": 3,
+      "end": ""
+    },
+    "puk": {
+      "retry": 10
+    },
+    "mep": {},
+    "status": "Ready",
+    "sprintSimLock": 0,
+    "end": ""
+  },
+  "sms": {
+    "ready": true,
+    "unreadMsgs": 0,
+    "end": ""
+  },
+  "session": {
+    "userRole": "Guest",
+    "lang": "en",
+    "hintDisplayPassword": "",
+    "secToken": "9Q9YNHP4leasekI0v716BAQkPKmKFne",
+    "supportedLangList": [
+      {
+        "id": "en",
+        "isCurrent": true,
+        "label": "English"
+      },
+      {
+        "id": "ar_AR",
+        "isCurrent": false,
+        "label": "العربية (Arabic)"
+      },
+      {
+        "id": "de_DE",
+        "isCurrent": false,
+        "label": "Deutsch (German)"
+      },
+      {
+        "id": "es_ES",
+        "isCurrent": false,
+        "label": "Español (Spanish)"
+      },
+      {
+        "id": "fr_FR",
+        "isCurrent": false,
+        "label": "Français (French)"
+      },
+      {
+        "id": "it_IT",
+        "isCurrent": false,
+        "label": "Italiano (Italian)"
+      },
+      {
+        "id": "nl_NL",
+        "isCurrent": false,
+        "label": "Nederlands (Dutch)"
+      },
+      {
+        "id": "no_NO",
+        "isCurrent": false,
+        "label": "Norsk (Norwegian)"
+      },
+      {
+        "id": "pl_PL",
+        "isCurrent": false,
+        "label": "Polski (Polish)"
+      },
+      {
+        "id": "fi_FI",
+        "isCurrent": false,
+        "label": "Suomi (Finnish)"
+      },
+      {
+        "id": "sv_SE",
+        "isCurrent": false,
+        "label": "Svenska (Swedish)"
+      },
+      {
+        "id": "tu_TU",
+        "isCurrent": false,
+        "label": "Türkçe (Turkish)"
+      },
+      {}
+    ]
+  },
+  "general": {
+    "defaultLanguage": "en",
+    "PRIid": "23114633",
+    "activated": true,
+    "TCAaccepted": true,
+    "showWebInfo": true,
+    "devTemperature": 41,
+    "verMajor": 43,
+    "verMinor": 0,
+    "environment": "Target",
+    "currTime": 1369301897,
+    "timeZoneOffset": 7200,
+    "userTzOffsetEnabled": false,
+    "userTzOffset": 0,
+    "deviceName": "Nighthawk M5",
+    "useMetricSystem": true,
+    "factoryResetButtonEnabled": true,
+    "factoryResetLCDSupported": true,
+    "factoryResetStatus": "NotStarted",
+    "setupCompleted": true,
+    "warrantyDateCode": "",
+    "languageSelected": true,
+    "uiDateFormat": "MMDDYYYY",
+    "upTime": 2078,
+    "use24HrTimeFormat": true,
+    "systemAlertList": {
+      "list": [
+        {
+          "description": "WiFi",
+          "active": "true",
+          "timestamp": "05/28/23 11:04:02 AM",
+          "type": "WLANoff"
+        },
+        {}
+      ],
+      "count": 1
+    },
+    "apiVersion": "2.0",
+    "companyName": "NETGEAR",
+    "usbDevicesURL": "/Forms/readyshareUsbDevicesInfo",
+    "nwFoldersURL": "/Forms/readyshareNWFoldersInfo",
+    "configURL": "/Forms/config",
+    "profileURL": "/Forms/profile",
+    "pinChangeURL": "/Forms/pinChange",
+    "portCfgURL": "/Forms/portCfg",
+    "portFilterURL": "/Forms/portFilter",
+    "wifiACLURL": "/Forms/wifiACL",
+    "supportedLangList": [
+      {
+        "id": "en",
+        "isCurrent": "true",
+        "isDefault": "true",
+        "label": "English",
+        "token1": "/romfs/lcd/en.tr",
+        "token2": ""
+      },
+      {
+        "id": "ar_AR",
+        "isCurrent": "false",
+        "isDefault": "false",
+        "label": "العربية (Arabic)",
+        "token1": "/romfs/lcd/ar_AR.tr",
+        "token2": ""
+      },
+      {
+        "id": "de_DE",
+        "isCurrent": "false",
+        "isDefault": "false",
+        "label": "Deutsch (German)",
+        "token1": "/romfs/lcd/de_DE.tr",
+        "token2": ""
+      },
+      {
+        "id": "es_ES",
+        "isCurrent": "false",
+        "isDefault": "false",
+        "label": "Español (Spanish)",
+        "token1": "/romfs/lcd/es_ES.tr",
+        "token2": ""
+      },
+      {
+        "id": "fr_FR",
+        "isCurrent": "false",
+        "isDefault": "false",
+        "label": "Français (French)",
+        "token1": "/romfs/lcd/fr_FR.tr",
+        "token2": ""
+      },
+      {
+        "id": "it_IT",
+        "isCurrent": "false",
+        "isDefault": "false",
+        "label": "Italiano (Italian)",
+        "token1": "/romfs/lcd/it_IT.tr",
+        "token2": ""
+      },
+      {
+        "id": "nl_NL",
+        "isCurrent": "false",
+        "isDefault": "false",
+        "label": "Nederlands (Dutch)",
+        "token1": "/romfs/lcd/nl_NL.tr",
+        "token2": ""
+      },
+      {
+        "id": "no_NO",
+        "isCurrent": "false",
+        "isDefault": "false",
+        "label": "Norsk (Norwegian)",
+        "token1": "/romfs/lcd/no_NO.tr",
+        "token2": ""
+      },
+      {
+        "id": "pl_PL",
+        "isCurrent": "false",
+        "isDefault": "false",
+        "label": "Polski (Polish)",
+        "token1": "/romfs/lcd/pl_PL.tr",
+        "token2": ""
+      },
+      {
+        "id": "fi_FI",
+        "isCurrent": "false",
+        "isDefault": "false",
+        "label": "Suomi (Finnish)",
+        "token1": "/romfs/lcd/fi_FI.tr",
+        "token2": ""
+      },
+      {
+        "id": "sv_SE",
+        "isCurrent": "false",
+        "isDefault": "false",
+        "label": "Svenska (Swedish)",
+        "token1": "/romfs/lcd/sv_SE.tr",
+        "token2": ""
+      },
+      {
+        "id": "tu_TU",
+        "isCurrent": "false",
+        "isDefault": "false",
+        "label": "Türkçe (Turkish)",
+        "token1": "/romfs/lcd/tu_TU.tr",
+        "token2": ""
+      },
+      {}
+    ]
+  },
+  "power": {
+    "PMState": "Online",
+    "SmState": "Online",
+    "battLowThreshold": 15,
+    "autoOff": {
+      "onUSBdisconnect": {
+        "end": ""
+      },
+      "onIdle": {
+        "timer": {
+          "end": ""
+        }
+      }
+    },
+    "standby": {
+      "onIdle": {
+        "timer": {
+          "end": ""
+        }
+      }
+    },
+    "autoOn": {
+      "end": ""
+    },
+    "batteryTemperature": 37,
+    "batteryVoltage": 3814,
+    "battChargeLevel": 15,
+    "battChargeSource": "QuickCharge",
+    "batteryState": "Low",
+    "battChargeAlgorithm": "Normal",
+    "charging": true,
+    "deviceTempCritical": false,
+    "resetRequired": "NoResetRequired",
+    "batteryTempState": "Normal",
+    "batteryName": "W20",
+    "wifiOff": {
+      "end": ""
+    },
+    "boost": {
+      "cableConnected": false,
+      "end": ""
+    },
+    "lpm": false,
+    "end": ""
+  },
+  "wwan": {
+    "prlVersion": 0,
+    "LTEBandPriority": "0",
+    "netScanStatus": "NotStarted",
+    "mtuChangeEnabled": false,
+    "LTEeHRPDConfig": "NotForcedLTEAndeHRPDEnabled",
+    "roamingEnhancedIndicator": 0,
+    "roamingMode": "HomeOnly",
+    "roamingGuardDom": "NotForcedDisabled",
+    "roamingGuardIntl": "NotForcedDisabled",
+    "roamingType": "Home",
+    "roamMenuDisplay": false,
+    "autoBandRegionChanged": false,
+    "currentNWserviceType": "Nr5gService",
+    "registerRejectCode": -1,
+    "netRegMode": "Auto",
+    "roaming": false,
+    "RAT": "Auto",
+    "bandRegion": [
+      {
+        "index": 0,
+        "name": "All",
+        "current": true
+      },
+      {
+        "index": 1,
+        "name": "WCDMA All",
+        "current": false
+      },
+      {
+        "index": 2,
+        "name": "LTE All",
+        "current": false
+      },
+      {
+        "index": 3,
+        "name": "LTE and NR5G",
+        "current": false
+      },
+      {}
+    ],
+    "autoconnect": "Always",
+    "profile": {
+      "promptForApnSelection": false,
+      "end": ""
+    },
+    "promptForPwd": "Disabled",
+    "netManualNoCvg": false,
+    "connection": "Connected",
+    "connectionType": "IPv4Only",
+    "currentPSserviceType": "5GSUB6",
+    "ca": {
+      "SCCcount": 2,
+      "SCClist": [
+        {
+          "cellid": "285",
+          "dlchan": "2850",
+          "sigrsrp": "0",
+          "sigrsrq": "0"
+        },
+        {
+          "cellid": "181",
+          "dlchan": "6200",
+          "sigrsrp": "0",
+          "sigrsrq": "0"
+        },
+        {}
+      ],
+      "end": ""
+    },
+    "connectionText": "5G",
+    "sessDuration": 2029,
+    "sessStartTime": 1369299868,
+    "signalStrength": {
+      "rssi": -72,
+      "rscp": 0,
+      "ecio": 0,
+      "rsrp": -108,
+      "rsrq": -17,
+      "bars": 3,
+      "sinr": -6,
+      "end": ""
+    },
+    "diagInfo": [
+      {
+        "lteAttached": true,
+        "nr5gAttached": true,
+        "endcEnabledConfig": true,
+        "ltesigValid": true,
+        "ltesigRssi": "-71 dBm",
+        "ltesigRsrp": "-107 dBm",
+        "ltesigRsrq": "-17 dB",
+        "ltesigSnr": "-4 dB",
+        "nr5gsigValid": true,
+        "nr5gsigRsrp": "-117 dBm",
+        "nr5gsigRsrq": "-15 dB",
+        "nr5gsigSnr": "0 dB"
+      },
+      {}
+    ],
+    "lteBandInfo": [
+      {
+        "isPcc": true,
+        "sccId": 0,
+        "sccState": 0,
+        "band": 3,
+        "channel": "1850",
+        "phyCid": "269",
+        "dlBandwidth": "20MHz",
+        "sccUlCaEnabled": "false",
+        "sccUlChannel": 0,
+        "sccUlBandwidth": "0"
+      },
+      {
+        "isPcc": false,
+        "sccId": 4,
+        "sccState": 1,
+        "band": 7,
+        "channel": "2850",
+        "phyCid": "285",
+        "dlBandwidth": "20MHz",
+        "sccUlCaEnabled": "false",
+        "sccUlChannel": 0,
+        "sccUlBandwidth": "0"
+      },
+      {
+        "isPcc": false,
+        "sccId": 5,
+        "sccState": 1,
+        "band": 20,
+        "channel": "6200",
+        "phyCid": "181",
+        "dlBandwidth": "10MHz",
+        "sccUlCaEnabled": "false",
+        "sccUlChannel": 0,
+        "sccUlBandwidth": "0"
+      },
+      {
+        "isPcc": false,
+        "sccId": 6,
+        "sccState": 1,
+        "band": 1,
+        "channel": "54",
+        "phyCid": "454",
+        "dlBandwidth": "10MHz",
+        "sccUlCaEnabled": "false",
+        "sccUlChannel": 0,
+        "sccUlBandwidth": "0"
+      },
+      {}
+    ],
+    "nr5gBandInfo": [
+      {
+        "isPcc": true,
+        "sccId": 0,
+        "sccState": 0,
+        "band": 78,
+        "channel": "649988",
+        "phyCid": "143",
+        "dlBandwidth": "100MHz",
+        "sccUlCaEnabled": "false",
+        "sccUlChannel": 0,
+        "sccUlBandwidth": "0"
+      },
+      {}
+    ],
+    "laa": {
+      "supported": false,
+      "enabled": false,
+      "end": ""
+    }
+  },
+  "wwanadv": {
+    "curBand": "LTE B3",
+    "radioQuality": 48,
+    "country": "CHE",
+    "RAC": 0,
+    "LAC": 40020,
+    "MCC": "228",
+    "MNC": "02",
+    "MNCFmt": 2,
+    "cellId": 20915457,
+    "chanId": 1850,
+    "primScode": -1,
+    "plmnSrvErrBitMask": 0,
+    "chanIdUl": 19850,
+    "txLevel": 20,
+    "rxLevel": -108,
+    "end": ""
+  },
+  "ethernet": {},
+  "wifi": {
+    "clientCount": 0,
+    "country": "FR",
+    "wps": {
+      "end": ""
+    },
+    "guest": {
+      "maxClientCnt": 31,
+      "enabled": false,
+      "SSID": "rothplex",
+      "accessProfile": "Full",
+      "timerEnable": false,
+      "timerTimestamp": 0,
+      "timerValue": 3600,
+      "chan": 0,
+      "mode": "M802_11_ANAX",
+      "DHCP": {
+        "range": {
+          "end": ""
+        }
+      }
+    },
+    "aux": {
+      "enabled": false,
+      "AuxMode": "Off",
+      "SSID": "rothplex-Guest",
+      "maxClientCnt": 10,
+      "chan": 1,
+      "mode": "M802_11_BGN",
+      "end": ""
+    },
+    "end": ""
+  },
+  "router": {
+    "hostName": "mywebui",
+    "domainName": "net",
+    "ipPassThroughEnabled": false,
+    "ipPassThroughSupported": true,
+    "VPNpassthrough": true,
+    "end": ""
+  },
+  "fota": {
+    "fwupdater": {
+      "available": false,
+      "error": false,
+      "state": "NoNewFw",
+      "end": ""
+    }
+  },
+  "failover": {
+    "supported": true,
+    "end": ""
+  },
+  "cradle": {
+    "mode": false,
+    "smartMode": false,
+    "url": "",
+    "end": ""
+  },
+  "eventlog": {
+    "end": 0
+  },
+  "ui": {
+    "serverDaysLeftHide": false,
+    "promptActivation": true,
+    "end": 0
+  },
+  "accesscontrol": {
+    "nlpc": {
+      "end": 0
+    },
+    "blocksites": {
+      "end": 0
+    },
+    "schedulerBlockingActive": false,
+    "end": 0
+  },
+  "ready": {
+    "shareSupported": false,
+    "cloudSupported": false,
+    "deviceShare": {
+      "extMediaSupported": false,
+      "end": 0
+    },
+    "cloud": {
+      "end": 0
+    }
+  },
+  "insight": {
+    "supported": true,
+    "enabled": true,
+    "active": false,
+    "version": "23.06.53.2",
+    "end": ""
+  }
+}
