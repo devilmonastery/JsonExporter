@@ -1,4 +1,4 @@
-package json2metrics
+package jsonexporter
 
 import (
 	"fmt"
@@ -16,10 +16,8 @@ type Exporter struct {
 }
 
 func NewExporter() *Exporter {
-
-	return &Exporter{
-		registry: prometheus.NewRegistry(),
-	}
+	ret := &Exporter{}
+	return ret
 }
 
 func (e *Exporter) AddMetric(path string, metric string, help string) error {
@@ -48,13 +46,26 @@ func (e *Exporter) AddMetric(path string, metric string, help string) error {
 		Help:      fmt.Sprintf("%s (from %s)", help, path),
 	})
 
-	err := e.registry.Register(pe)
+	//err := e.registry.Register(pe)
+	err := prometheus.Register(pe)
 	if err != nil {
 		log.Printf("error creating new Gauge metric for %q: %v", path, err)
 		return err
 	}
 	e.metrics.Store(path, &pe)
 	return nil
+}
+
+func (e *Exporter) RemoveMetric(path string) {
+	gaugev, ok := e.metrics.Load(path)
+	if !ok {
+		log.Printf("error removing metric %q", path)
+		return
+	}
+	gauge := (gaugev).(*prometheus.Gauge)
+	if !e.registry.Unregister(*gauge) {
+		log.Printf("error unregistering metric %q", path)
+	}
 }
 
 func (e *Exporter) Export(json string) {
@@ -74,9 +85,10 @@ func (e *Exporter) Export(json string) {
 			log.Printf("error loading gauge for %q", path)
 			continue
 		}
+		val := value.Float()
 		gauge := (gaugev).(*prometheus.Gauge)
-		(*gauge).Set(value.Num)
-		log.Printf("metric: %q = %0.2f", path, value.Num)
+		(*gauge).Set(val)
+		log.Printf("metric: %q = %0.2f", path, val)
 	}
 }
 
@@ -86,9 +98,11 @@ func (e *Exporter) GetGauge(path string) *prometheus.Gauge {
 }
 
 func (e *Exporter) Close() {
+	log.Printf("closing exporter")
 	e.metrics.Range(func(key, value any) bool {
-		sink := value.(prometheus.Gauge)
-		e.registry.Unregister(sink)
+		sink := value.(*prometheus.Gauge)
+		//e.registry.Unregister(sink)
+		prometheus.Unregister(*sink)
 		return true
 	})
 }

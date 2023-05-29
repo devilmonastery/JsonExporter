@@ -1,4 +1,4 @@
-package json2metrics
+package jsonexporter
 
 import (
 	"os"

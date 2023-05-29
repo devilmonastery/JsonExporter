@@ -1,16 +1,11 @@
-package json2metrics
+package jsonexporter
 
 import (
 	"testing"
 )
 
-type TestConf struct {
-	Foo string
-	Bar string
-}
-
 func TestLoadConfig(t *testing.T) {
-	loader, err := NewConfigLoader[TestConf]("testdata/config.yaml")
+	loader, err := NewConfigLoader("testdata/config.yaml")
 	if err != nil {
 		t.Fatalf("error loading config: %v", err)
 	}
@@ -19,11 +14,11 @@ func TestLoadConfig(t *testing.T) {
 	}
 
 	conf := loader.Config()
-
-	if conf.Foo != "foo!" {
-		t.Errorf("expected 'foo' = 'foo!', got %q", conf.Foo)
+	if conf == nil {
+		t.Fatal("expected config, git nil")
 	}
-	if conf.Bar != "bar!" {
-		t.Errorf("expected 'bar' = 'bar!', got %q", conf.Bar)
+
+	if len(conf.Targets) == 0 {
+		t.Fatalf("expected at least one target, got zero")
 	}
 }
